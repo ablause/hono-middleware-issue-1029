@@ -1,0 +1,23 @@
+{
+  "name": "hono-app",
+  "scripts": {
+    "postinstall": "bun prisma generate",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@hono/typebox-validator": "^0.3.2",
+    "@prisma/adapter-d1": "^6.5.0",
+    "@prisma/client": "^6.5.0",
+    "@sinclair/typebox": "^0.34.31",
+    "hono": "^4.7.5"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.8.4",
+    "@cloudflare/workers-types": "^4.20250321.0",
+    "@types/bun": "^1.2.5",
+    "prisma": "^6.5.0",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.0.9",
+    "wrangler": "^4.4.0"
+  }
+}
